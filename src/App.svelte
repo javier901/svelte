@@ -15,5 +15,6 @@
     font-size: 2.5rem;
     font-family: "Lato", sans-serif;
     font-weight: 900;
+    margin-bottom: 10px;
   }
 </style>

@@ -41,22 +41,31 @@
     margin-bottom: 7px;
     text-align: center;
     padding-right: 15px;
+    transition: all 0.3s ease;
+    color: #1e1e1e;
   }
   p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #2e2e2e;
+    color: #3c3c3c;
   }
   img {
     position: absolute;
     right: 5px;
     top: 5px;
     transition: all 0.3s ease;
-    opacity: 0.7;
+    opacity: 0;
   }
-  img:hover {
-    transition: all 0.3s ease;
+  .card:hover img {
     opacity: 1;
+  }
+  .card:hover p {
+    color: #000000;
+  }
+  .card:hover h1 {
+    transition: all 0.3s ease;
+  
+    color: rgb(0, 89, 255);
   }
 </style>
