@@ -65,7 +65,13 @@
   }
   .card:hover h1 {
     transition: all 0.3s ease;
-  
+
     color: rgb(0, 89, 255);
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+    .card {
+      width: 290px;
+    }
   }
 </style>

@@ -1,5 +1,6 @@
 <script>
   import AddUser from "./AddUser.svelte";
+  import DemoCard from "./DemoCard.svelte";
   import UserCard from "./UserCard.svelte";
   console.log(localStorage.length);
   if (localStorage.length === 0) {
@@ -9,7 +10,7 @@
 
   let usersDoc = JSON.parse(getUserfromLS);
   let demoData = {
-    title: "Title of Card",
+    title: "Demo Card",
     Message:
       "Believe In YourSelf <br> To improve is to change, To be <strong> Perfect </strong>  is to change often. ",
   };
@@ -37,8 +38,7 @@
   <div class="container">
     <AddUser on:doneForm={doneForm} />
     <div class="column_con">
-      <h2>Demo Card :</h2>
-      <UserCard title={demoData.title} message={demoData.Message} />
+      <DemoCard title={demoData.title} message={demoData.Message} />
     </div>
   </div>
   <div class="container">
@@ -57,5 +57,10 @@
   .column_con {
     display: flex;
     flex-direction: column;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .column_con h2 {
+      text-align: center;
+    }
   }
 </style>
