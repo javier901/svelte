@@ -58,9 +58,4 @@
     display: flex;
     flex-direction: column;
   }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .column_con h2 {
-      text-align: center;
-    }
-  }
 </style>
