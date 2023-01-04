@@ -1,8 +1,12 @@
 <script>
   import AddUser from "./AddUser.svelte";
   import UserCard from "./UserCard.svelte";
-
+  console.log(localStorage.length);
+  if (localStorage.length === 0) {
+    localStorage.setItem("1", `[]`);
+  }
   let getUserfromLS = localStorage.getItem("1");
+
   let usersDoc = JSON.parse(getUserfromLS);
   let demoData = {
     title: "Title of Card",
@@ -33,7 +37,7 @@
   <div class="container">
     <AddUser on:doneForm={doneForm} />
     <div class="column_con">
-      <h2>Demo Card : </h2>
+      <h2>Demo Card :</h2>
       <UserCard title={demoData.title} message={demoData.Message} />
     </div>
   </div>
@@ -50,7 +54,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .column_con{
+  .column_con {
     display: flex;
     flex-direction: column;
   }

@@ -1,12 +1,12 @@
 <script>
   import { createEventDispatcher } from "svelte";
 
-  let user = {};
+  let userddd = {};
   let dispatch = createEventDispatcher();
   let doneForm = () => {
-    dispatch("doneForm", user);
-    user.title = " ";
-    user.message = " ";
+    dispatch("doneForm", userddd);
+    userddd.title = "";
+    userddd.message = "";
   };
 </script>
 
@@ -17,7 +17,7 @@
       type="text"
       name="titleInfo"
       id="titleInfo"
-      bind:value={user.title}
+      bind:value={userddd.title}
       required
     />
   </div>
@@ -28,7 +28,7 @@
       id="messageInfo"
       cols="25"
       rows="7"
-      bind:value={user.message}
+      bind:value={userddd.message}
       required
     />
   </div>

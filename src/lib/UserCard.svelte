@@ -40,6 +40,7 @@
     font-family: "Lato", sans-serif;
     margin-bottom: 7px;
     text-align: center;
+    padding-right: 15px;
   }
   p {
     font-family: "Poppins", sans-serif;
