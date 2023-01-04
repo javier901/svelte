@@ -5,8 +5,8 @@
   let dispatch = createEventDispatcher();
   let doneForm = () => {
     dispatch("doneForm", user);
-    user.title = "";
-    user.message = "";
+    user.title = " ";
+    user.message = " ";
   };
 </script>
 
@@ -18,6 +18,7 @@
       name="titleInfo"
       id="titleInfo"
       bind:value={user.title}
+      required
     />
   </div>
   <div>
@@ -28,6 +29,7 @@
       cols="25"
       rows="7"
       bind:value={user.message}
+      required
     />
   </div>
   <div class="end">

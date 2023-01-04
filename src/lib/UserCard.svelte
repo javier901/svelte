@@ -4,7 +4,7 @@
   export let title, message;
   let dispatch = createEventDispatcher();
   let handleRemove = () => {
-    dispatch("remove")
+    dispatch("remove");
   };
 </script>
 
