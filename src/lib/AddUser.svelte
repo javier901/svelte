@@ -33,7 +33,7 @@
     />
   </div>
   <div class="end">
-    <button type="submit">Sumbit</button>
+    <button type="submit">Submit Yoo</button>
   </div>
 </form>
 
